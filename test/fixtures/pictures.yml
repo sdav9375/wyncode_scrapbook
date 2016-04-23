@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  cat_id: MyString
+  cohort_id: MyString
+  url: MyString
+
+two:
+  title: MyString
+  cat_id: MyString
+  cohort_id: MyString
+  url: MyString
