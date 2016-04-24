@@ -19,7 +19,7 @@
         <td><%= picture.title %></td>
         <td><%= picture.cat_id %></td>
         <td><%= picture.cohort_id %></td>
-        <td><%= image_tag picture.url %></td>
+        <td><%= image_tag picture.avatar.medium %></td>
         <td><%= link_to 'Show', picture %></td>
         <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
         <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
