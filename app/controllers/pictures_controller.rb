@@ -1,6 +1,10 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
+  def main
+    
+  end
+
   # GET /pictures
   # GET /pictures.json
   def index

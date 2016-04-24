@@ -1,6 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Wyncode Scrapbook</h1>
+<h2>WYNCODE SCRAPBOOK</h2>
+
+<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+   <a class="btn-floating btn-large lightblue">
+     <i class="large material-icons">menu</i>
+   </a>
+   <ul>
+     <li><a href="<%= new_picture_path %>" class="btn-floating black"><i class="material-icons">note_add</i></a></li>
+   </ul>
+ </div>
+
 
 <table>
   <thead>
@@ -8,8 +18,8 @@
       <th>Title</th>
       <th>Cohort</th>
       <th>Cat</th>
-      <th>Url</th>
-      <th colspan="5"></th>
+      <th>Upload</th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -30,4 +40,4 @@
 
 <br>
 
-<%= link_to 'New Picture', new_picture_path %>
+<!-- <%= link_to 'New Picture', new_picture_path %> -->

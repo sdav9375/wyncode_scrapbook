@@ -2,3 +2,15 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.background_message {
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 50px;
+  margin-top: 45vh;
+
+}
+
+h2{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
