@@ -2,5 +2,15 @@
 <%= render 'form' %>
 
 
-<i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
-<%= link_to 'Back', pictures_path %>
+
+<!-- <%= link_to 'Back', pictures_path %> -->
+
+<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+   <a class="btn-floating btn-large lightblue">
+     <i class="large material-icons">menu</i>
+   </a>
+   <ul>
+     <li><a href="<%= pictures_path %>" class="btn-floating black"><i class="material-icons">mode_edit</i></a></li>
+     <li><a href="<%= root_path %>" class="btn-floating black"><i class="material-icons">airplay</i></a></li>
+   </ul>
+ </div>
