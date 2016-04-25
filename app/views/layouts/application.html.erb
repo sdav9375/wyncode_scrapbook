@@ -2,19 +2,23 @@
 <html>
 <head>
   <title>WyncodeScrapbook</title>
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
   <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-   
+
    <!-- Compiled and minified JavaScript -->
 
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+
 </head>
 <body>
 
 <%= yield %>
 <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js' %>
+<%= javascript_include_tag 'https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.js'%>
 </body>
 </html>

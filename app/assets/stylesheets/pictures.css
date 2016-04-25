@@ -2,6 +2,44 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: white;
+}
+
+.gallery img{
+  width: 100%;
+  padding: 5vw;
+}
+
+.gallery-cell {
+  width: 40vw;
+  height: 20vh;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
 .background_message {
   text-align: center;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -19,4 +57,9 @@ table {
 }
 body {
   margin: 0 2vw 0 2vw;
+}
+tbody tr{
+  dislay: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
