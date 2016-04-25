@@ -12,6 +12,7 @@
 
 h2{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  border-bottom: 2px grey solid;
 }
 table {
   font-family: "Palatino Linotype", "Book Antiqua";
