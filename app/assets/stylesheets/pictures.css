@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
+body { font-family: font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
 .gallery {
 
@@ -62,4 +62,13 @@ tbody tr{
   dislay: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.field input {
+  width: 10%;
+
+}
+.dropdown-content{
+  background-color: lightblue;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
 }
