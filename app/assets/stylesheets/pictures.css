@@ -10,7 +10,6 @@
 body { font-family: sans-serif; }
 
 .gallery {
-
   width: 100%;
   height: 600px;
   overflow: hidden;
@@ -52,6 +51,7 @@ h2{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   border-bottom: 2px grey solid;
 }
+
 table {
   font-family: "Palatino Linotype", "Book Antiqua";
 }
@@ -59,7 +59,7 @@ body {
   margin: 0 2vw 0 2vw;
 }
 tbody tr{
-  dislay: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
