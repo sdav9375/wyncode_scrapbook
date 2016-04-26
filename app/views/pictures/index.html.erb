@@ -21,6 +21,7 @@
 
 
 <table>
+
   <thead>
     <tr>
       <th>Title</th>
@@ -34,9 +35,9 @@
   <tbody>
     <% @pictures.each do |picture| %>
       <tr>
-        <td><%= picture.title %></td>
-        <td><%= picture.cat_id %></td>
-        <td><%= picture.cohort_id %></td>
+        <td><% picture.title %></td>
+        <td><% picture.cat_id %></td>
+        <td><% picture.cohort_id %></td>
         <td><%= image_tag picture.avatar.medium %></td>
         <td><a class='dropdown-button btn' href='#' data-activates='dropdown1'>OPTIONS</a></td>
         <td><ul id='dropdown1' class='dropdown-content'>
