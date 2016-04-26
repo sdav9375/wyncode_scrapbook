@@ -17,8 +17,9 @@ body { font-family: font-family: "Palatino Linotype", "Book Antiqua", Palatino, 
 }
 
 .gallery img{
-  width: 100%;
+  width: 80%;
   padding: 5vw;
+  background-color: #D0DAD9;
 }
 
 .gallery-cell {
@@ -58,11 +59,22 @@ table {
 body {
   margin: 0 2vw 0 2vw;
 }
-tbody tr{
+tbody {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 3vh 10vw 3vh 10vw;
 }
+tbody tr{
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-action-btn {
+  position: fixed;
+}
+
+
 .field input {
   width: 10%;
 
