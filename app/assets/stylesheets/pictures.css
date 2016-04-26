@@ -29,6 +29,10 @@
   opacity: .6;
 }
 
+
+body {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+
 .gallery {
   width: 100%;
   height: 600px;
