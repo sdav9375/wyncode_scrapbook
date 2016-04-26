@@ -7,13 +7,34 @@
   box-sizing: border-box;
 }
 
-body {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+.body {
+  font-family: "Palatino Linotype", sans-serif;
+  background-color: #A3ADC2;
+  width: 100%
+}
+.background_message::first-letter{
+  font-size: 300px;
+  color: black;
+  font-family: cursive;
+}
+
+.background_message {
+  text-align: center;
+  font-family: "Palatino Linotype", sans-serif;
+  font-size: 70px;
+  margin-top: 40vh;
+  color: white;
+  background-color: #54C4C2;
+  letter-spacing: .5;
+  opacity: .6;
+}
 
 .gallery {
   width: 100%;
   height: 600px;
   overflow: hidden;
-  background: white;
+  background: #A3ADC2;
+  border-bottom: 2px grey solid;
 }
 
 .gallery img{
@@ -40,21 +61,26 @@ body {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
   color: white;
 }
 
-.background_message {
-  text-align: center;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 50px;
-  margin-top: 45vh;
 
-}
 
 h2{
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  border-bottom: 2px grey solid;
+  font-family: "Palatino Linotype", sans-serif;
+  font-size: 35px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  opacity: .6;
+  border-bottom: grey 10px solid;
+}
+
+h2::first-letter{
+  font-family: cursive;
+  color: black;
+  font-size: 10vh;
+
 }
 
 table {
-  font-family: "Palatino Linotype", "Book Antiqua";
+  font-family: "Palatino Linotype", sans-serif;
 }
 body {
   margin: 0 2vw 0 2vw;
@@ -74,13 +100,11 @@ tbody tr{
   position: fixed;
 }
 
-
-.field input {
-  width: 10%;
-
-}
 .dropdown-content{
-  background-color: lightblue;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: yellow;
+  font-family: "Palatino Linotype", sans-serif;
+}
 
+.btn, .btn-small{
+  background-color: yellow;
 }

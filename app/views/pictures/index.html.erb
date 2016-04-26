@@ -7,16 +7,15 @@
      <i class="large material-icons">menu</i>
    </a>
    <ul>
-     <li><a href="<%= new_picture_path %>" class="btn-floating black"><i class="material-icons">note_add</i></a></li>
-     <li><a href="<%= root_path %>" class="btn-floating black"><i class="material-icons">airplay</i></a></li>
+     <li><a href="<%= new_picture_path %>" class="btn-floating red"><i class="material-icons">note_add</i></a></li>
+     <li><a href="<%= root_path %>" class="btn-floating lightblue"><i class="material-icons">airplay</i></a></li>
    </ul>
  </div>
 
  <div class="gallery js-flickity"
   data-flickity-options='{"autoPlay": 1500, "imagesLoaded": true, "percentPosition": false}'>
-  <img src="/assets/Group Photo 2.jpg" alt="crazy group photo" />
-  <img src="/assets/GroupPhoto.jpg" alt="crazy group photo" />
-  <img src="/assets/thumb_Untitled2.jpg" alt="crazy group photo" />
+    <%= image_tag 'GroupPhoto.jpg' %>
+    <%= image_tag 'Group Photo 2.jpg' %>
     <% @pictures.each do |picture| %>
     <%= image_tag picture.avatar %>
     <%end%>
@@ -32,7 +31,7 @@
         <td><% picture.cat_id %></td>
         <td><% picture.cohort_id %></td>
         <td><%= image_tag picture.avatar.medium %></td>
-        <td><a class='dropdown-button btn' href='#' data-activates='dropdown1'>OPTIONS</a></td>
+        <td><a class='dropdown-button btn' href='#' data-activates='dropdown1'>DROP ME</a></td>
         <td><ul id='dropdown1' class='dropdown-content'>
         <li><%= link_to 'Show', picture %></li>
         <li><%= link_to 'Edit', edit_picture_path(picture) %></li>
