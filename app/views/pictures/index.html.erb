@@ -13,14 +13,23 @@
  </div>
 
  <div class="gallery js-flickity"
-  data-flickity-options='{"autoPlay": 1500, "imagesLoaded": true, "percentPosition": false, "lazyLoad": 2}'>
+  data-flickity-options='{"autoPlay": 1500, "imagesLoaded": true, "percentPosition": false}'>
   <img src="/assets/Group Photo 2.jpg" alt="crazy group photo" />
   <img src="/assets/GroupPhoto.jpg" alt="crazy group photo" />
   <img src="/assets/thumb_Untitled2.jpg" alt="crazy group photo" />
 </div>
 
 
-<table class="striped">
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Cohort</th>
+      <th>Category</th>
+      <th>Upload</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
   <tbody>
     <% @pictures.each do |picture| %>
@@ -29,13 +38,12 @@
         <td><%= picture.cat_id %></td>
         <td><%= picture.cohort_id %></td>
         <td><%= image_tag picture.avatar.medium %></td>
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>OPTIONS</a>
-        <ul id='dropdown1' class='dropdown-content'>
-           <li><%= link_to 'Show', picture %></li>
-           <li><%= link_to 'Edit', edit_picture_path(picture) %></li>
-           <li><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-          </ul>
-      </tr>
+        <td><a class='dropdown-button btn' href='#' data-activates='dropdown1'>OPTIONS</a></td>
+        <td><ul id='dropdown1' class='dropdown-content'>
+        <li><%= link_to 'Show', picture %></li>
+        <li><%= link_to 'Edit', edit_picture_path(picture) %></li>
+        <li><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      </ul></td>
     <% end %>
   </tbody>
 </table>
