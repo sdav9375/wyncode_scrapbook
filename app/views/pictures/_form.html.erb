@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
+  <div class="field" color: "blue">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
@@ -22,10 +22,10 @@
     <%= f.label :cohort_id %><br>
     <%= f.number_field :cohort_id %>
   </div>
-  <div class="waves-effect waves-light btn">
+  <p class="waves-effect waves-light btn">
     <%= f.file_field :avatar %>
-  </div>
-  <div class="waves-effect waves-light btn red">
+  </p>
+  <p class="waves-effect waves-light btn red">
     <%= f.submit %>
-  </div>
+  </p>
 <% end %>

@@ -110,7 +110,10 @@ tbody tr{
 }
 
 .btn, .btn-small{
-  background-color: yellow;
+  background-color: #C05A50;
+  display: flex;
+  margin-top: 2vh;
+  float: left;
 }
 
 .picture {
@@ -119,6 +122,31 @@ tbody tr{
   text-align: center;
   margin-top: 8vh;
 }
-.image{
-  height: 20vh;
+img.image{
+  width: 20vw;
+}
+form {
+  color: white;
+  width: 20vw;
+}
+form label{
+  color: lightblue;
+  font-weight: bolder;
+  font-size: 15px;
+}
+form input#picture_cohort_id{
+  width: 5vw;
+}
+div.show_pictures {
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+  display: flex;
+  float: right;
+  padding-right: 10vw;
+}
+div img{
+  display: flex;
+  flex-wrap: wrap;
+  width: 65vw;
 }

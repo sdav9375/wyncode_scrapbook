@@ -25,7 +25,7 @@
     <% @pictures.each do |picture| %>
       <div class="picture">
         <%= image_tag picture.avatar.medium, class: "image" %>
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>DROP ME</a>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>option</a>
         <ul id='dropdown1' class='dropdown-content'>
         <li><%= link_to 'Show', picture %></li>
         <li><%= link_to 'Edit', edit_picture_path(picture) %></li>
