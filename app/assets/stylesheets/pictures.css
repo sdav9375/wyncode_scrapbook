@@ -112,3 +112,13 @@ tbody tr{
 .btn, .btn-small{
   background-color: yellow;
 }
+
+.picture {
+  width: 33vw;
+  float: left;
+  text-align: center;
+  margin-top: 8vh;
+}
+.image{
+  height: 20vh;
+}

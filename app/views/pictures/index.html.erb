@@ -20,26 +20,20 @@
     <%= image_tag picture.avatar %>
     <%end%>
 </div>
-<table>
 
-
-
-  <tbody>
+  <section>
     <% @pictures.each do |picture| %>
-      <tr>
-        <td><% picture.title %></td>
-        <td><% picture.cat_id %></td>
-        <td><% picture.cohort_id %></td>
-        <td><%= image_tag picture.avatar.medium %></td>
-        <td><a class='dropdown-button btn' href='#' data-activates='dropdown1'>DROP ME</a></td>
-        <td><ul id='dropdown1' class='dropdown-content'>
+      <div class="picture">
+        <%= image_tag picture.avatar.medium, class: "image" %>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>DROP ME</a>
+        <ul id='dropdown1' class='dropdown-content'>
         <li><%= link_to 'Show', picture %></li>
         <li><%= link_to 'Edit', edit_picture_path(picture) %></li>
         <li><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-      </ul></td>
+      </ul>
+    </div>
     <% end %>
-  </tbody>
-</table>
+  </section>
 
 <br>
 
