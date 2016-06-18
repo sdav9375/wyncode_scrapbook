@@ -42,14 +42,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   #   %w(jpg jpeg gif png)
   # end
 
-  # CarrierWave.configure do |config|
-  #   config.fog_credentials = {
-  #     provider:              'AWS',                        # required
-  #     aws_access_key_id:     'S3_KEY',                # required
-  #     aws_secret_access_key: 'S3_SECRET',             # required
-  #     # region:                ENV['S3_REGION'],             # optional, defaults to 'us-east-1'
-  #   }
-  #   # config.fog_directory  = 'copley-dev'                   # required
-  # end
+  
 
 end
